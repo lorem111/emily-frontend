@@ -1,0 +1,114 @@
+.App {
+  text-align: center;
+  background-image: url("https://i.imgur.com/CLp5uos.jpg");
+  background-size: cover;
+  height: 100vh;
+  color: white;
+}
+
+.chat-container {
+  height: 80vh;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 10px;
+  padding: 10px;
+}
+
+input {
+  width: 60%;
+  margin-right: 10px;
+}
+
+button {
+  background-color: white;
+  color: black;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  padding: 10px; 
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;  /* Adjust this value to your liking */
+  margin: 0 auto;  /* Center the chat-container horizontally */
+  /* Other styles... */
+}
+
+.message {
+  max-width: 60%;  /* Adjust this value to your liking */
+  padding: 10px;
+  border-radius: 15px;
+  margin: 10px 0;
+  /* Other styles... */
+}
+
+.message.User {
+  align-self: flex-start;
+  color: lightskyblue; /* Adjust to your liking */
+  /*background-color: #f0f0f0; /* Background color for user messages */
+  /* Other styles... */
+}
+
+.message.Emily {
+  align-self: flex-end;
+  color: lightcoral; /* Adjust to your liking */
+  /*background-color: #0099ff; /* Background color for AI messages */
+  /* Other styles... */
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  /*background-color: #FEDFE1; /* Sakura pink */
+  width: 90%; /* Take up 90% of the parent container's width */
+  max-width: 600px; /* Maximum width */
+  margin: 0 auto; /* Center the container */
+}
+
+/* Responsive design for screens larger than 600px */
+@media (min-width: 600px) {
+.input-container {
+  width: 50%; /* Take up 50% of the parent container's width */
+}
+}
+
+.input-container input {
+  flex-grow: 1;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.input-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  background-color: #5B1E2C; /* Dark Sakura color */
+  color: #FEDFE1; /* Sakura pink */
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.input-container button:hover {
+  background-color: #7C3540; /* Slightly lighter dark Sakura color */
+}
+
+

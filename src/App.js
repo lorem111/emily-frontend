@@ -22,7 +22,6 @@ function App() {
     setMessages([...messages, { text: input, sender: 'User' }, { text: data.ai_response, sender: 'Emily' }]);
 
     // Then fetch and play the audio
-    console.log("getting audio")
     const audioResponse = await fetch('https://87h31cnnke.execute-api.eu-west-1.amazonaws.com/dev/ai_audio_response');
     const audioBlob = await audioResponse.blob(); 
     const audioUrl = URL.createObjectURL(audioBlob);

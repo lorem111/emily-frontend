@@ -25,7 +25,6 @@ function App() {
     const audioResponse = await fetch('https://87h31cnnke.execute-api.eu-west-1.amazonaws.com/dev/ai_audio_response');
     const audioBlob = await audioResponse.blob(); 
     const audioUrl = URL.createObjectURL(audioBlob);
-    console.log("blob url" + audioUrl)
     const audio = new Audio(audioUrl);
     audio.play();
 
